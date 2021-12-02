@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-useless-constructor */
 import {
   Controller,
   Get,
@@ -13,6 +15,9 @@ import { UpdateUserDto } from './dto/update-user.dto';
 
 @Controller('users')
 export class UsersController {
+  // eslint-disable-next-line no-useless-constructor
+  // eslint-disable-next-line no-unused-vars
+  // eslint-disable-next-line no-empty-function
   constructor(private readonly usersService: UsersService) {}
 
   @Post()

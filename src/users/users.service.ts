@@ -9,9 +9,11 @@ import { User, UserDocument } from './entities/user.entity';
 
 @Injectable()
 export class UsersService {
+  // eslint-disable-next-line no-unused-vars
   constructor(@InjectModel(User.name) private userModel: Model<UserDocument>) {}
 
   create(createUserDto: CreateUserDto) {
+    // eslint-disable-next-line new-cap
     const user = new this.userModel(createUserDto);
     return user.save();
   }
